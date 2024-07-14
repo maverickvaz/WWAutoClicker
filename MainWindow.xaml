@@ -1,0 +1,107 @@
+﻿<Window x:Class="WWAutoClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WWAutoClicker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="297" Width="455">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Headers -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="按键名称" VerticalAlignment="Center" Padding="5"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="开始时间（秒）" VerticalAlignment="Center" Padding="5"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="循环周期（秒）" VerticalAlignment="Center" Padding="5"/>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="单次循环次数" VerticalAlignment="Center" Padding="5"/>
+        <TextBlock Grid.Row="0" Grid.Column="4" Text="启用" VerticalAlignment="Center" Padding="5"/>
+
+        <!-- Key 1 -->
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="1" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBox1Start" Grid.Row="1" Grid.Column="1" Text="4" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBox1Interval" Grid.Row="1" Grid.Column="2" Text="12" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBox1Repeat" Grid.Row="1" Grid.Column="3" Text="12" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBox1" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Key 2 -->
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="2" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBox2Start" Grid.Row="2" Grid.Column="1" Text="12" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBox2Interval" Grid.Row="2" Grid.Column="2" Text="24" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBox2Repeat" Grid.Row="2" Grid.Column="3" Text="12" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBox2" Grid.Row="2" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Key 3 -->
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="3" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBox3Start" Grid.Row="3" Grid.Column="1" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBox3Interval" Grid.Row="3" Grid.Column="2" Text="24" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBox3Repeat" Grid.Row="3" Grid.Column="3" Text="12" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBox3" Grid.Row="3" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Key Q -->
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Q" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBoxQStart" Grid.Row="4" Grid.Column="1" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxQInterval" Grid.Row="4" Grid.Column="2" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxQRepeat" Grid.Row="4" Grid.Column="3" Text="0" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBoxQ" Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Key E -->
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="E" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBoxEStart" Grid.Row="5" Grid.Column="1" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxEInterval" Grid.Row="5" Grid.Column="2" Text="2" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxERepeat" Grid.Row="5" Grid.Column="3" Text="0" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBoxE" Grid.Row="5" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Key R -->
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="R" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBoxRStart" Grid.Row="6" Grid.Column="1" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxRInterval" Grid.Row="6" Grid.Column="2" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxRRepeat" Grid.Row="6" Grid.Column="3" Text="0" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBoxR" Grid.Row="6" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Key F -->
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="F" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBoxFStart" Grid.Row="7" Grid.Column="1" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxFInterval" Grid.Row="7" Grid.Column="2" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxFRepeat" Grid.Row="7" Grid.Column="3" Text="0" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBoxF" Grid.Row="7" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Key Left Mouse -->
+        <TextBlock Grid.Row="8" Grid.Column="0" Text="LeftMouse" VerticalAlignment="Center" Padding="5"/>
+        <TextBox x:Name="textBoxLeftMouseStart" Grid.Row="8" Grid.Column="1" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxLeftMouseInterval" Grid.Row="8" Grid.Column="2" Text="0" VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="textBoxLeftMouseRepeat" Grid.Row="8" Grid.Column="3" Text="0" VerticalAlignment="Center" Width="50"/>
+        <CheckBox x:Name="checkBoxLeftMouse" Grid.Row="8" Grid.Column="4" VerticalAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!-- Start Button -->
+        <Button Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Content="Start" Click="StartButton_Click" VerticalAlignment="Center" Width="100" Margin="5"/>
+
+        <!-- Stop Button -->
+        <Button Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" Content="Stop" Click="StopButton_Click" VerticalAlignment="Center" Width="100" Margin="5"/>
+
+        <!-- 换人 and 战斗 Checkboxes -->
+        <CheckBox x:Name="checkBoxSwap" Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="1" Content="换人" VerticalAlignment="Center" Checked="CheckBoxSwap_Checked" Unchecked="CheckBoxSwap_Unchecked" Margin="5"/>
+        <CheckBox x:Name="checkBoxBattle" Grid.Row="9" Grid.Column="5" Grid.ColumnSpan="1" Content="战斗" VerticalAlignment="Center" Checked="CheckBoxBattle_Checked" Unchecked="CheckBoxBattle_Unchecked" Margin="5"/>
+    </Grid>
+</Window>

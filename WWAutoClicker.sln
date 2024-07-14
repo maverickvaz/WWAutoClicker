@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WWAutoClicker", "WWAutoClicker.csproj", "{A9DE1D8C-B56C-4D9E-9F85-CBAA4B929E69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9DE1D8C-B56C-4D9E-9F85-CBAA4B929E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DE1D8C-B56C-4D9E-9F85-CBAA4B929E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DE1D8C-B56C-4D9E-9F85-CBAA4B929E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DE1D8C-B56C-4D9E-9F85-CBAA4B929E69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DC29C68-A44B-4DBA-9B55-8E8A0C54380B}
+	EndGlobalSection
+EndGlobal
